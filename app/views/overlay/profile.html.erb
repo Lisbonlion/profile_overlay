@@ -1,10 +1,10 @@
-<p>Create Nepalese patriotic profile images. Click on Publish button to directly upload the picture to Facebook or download the image to upload manually.</p>
+<p>Crea la tua immagine profilo per supportare il Social Day! Fai clic sul tasto Publish per caricare direttamente la tua immagine su Facebook o scarica l'immagine per caricarla manualmente.</p>
 <p>&nbsp;</p>
 
 <div class="row">
   <% @overlay_images.each do |image|  %>
     <div class="col-md-3 col-sm-6 col-xs-12 pdbtm-sm">
-      <p><%= image_tag "https://s3.amazonaws.com/profile-overlay-assets/#{current_user.uid}_#{image}",
+      <p><%= image_tag "http://sdyprofile.s3-website.eu-central-1.amazonaws.com//#{current_user.uid}_#{image}",
               class: 'img-responsive', data: {action: 'zoom'} %></p>
       <div class="row">
         <div class="col-md-6 col-sm-6">

@@ -10,9 +10,9 @@ RSpec.feature "Static pages view", type: :feature do
     end
 
     it 'has right title and guest login message' do
-      expect(page).to have_title('NP Profile Image Overlay')
-      expect(page).to have_selector('h1', 'NP Profile Image Overlay')
-      expect(page).to have_content('Hello Guest')
+      expect(page).to have_title('SDY Profile Image Overlay')
+      expect(page).to have_selector('h1', 'SDY Profile Image Overlay')
+      expect(page).to have_content('Benvenuto!')
     end
   end
 

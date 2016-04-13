@@ -1,6 +1,6 @@
 class Overlay
   def self.images
-    %w(dashain.png dashain2.png npflag.png dharahara.png merodesh.png ilovenepal.png)
+    %w(SocialDay.png)
   end
 
   def self.create_image source, overlay_image, user
@@ -24,7 +24,7 @@ class Overlay
 
   def self.s3_upload source, file
     s3 = Aws::S3::Resource.new(
-            region:'us-east-1',
+            region:'eu-central-1',
             credentials: Aws::Credentials.new(ENV['AWS_ACCESS_KEY_ID'],
                                           ENV['AWS_SECRET_ACCESS_KEY']))
     bucket = s3.bucket(ENV['S3_BUCKET_NAME'])
